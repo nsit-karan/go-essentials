@@ -6,6 +6,19 @@ import (
 )
 
 func main() {
+
+	// go type basics
+	//goTypes()
+
+	// go conditionals
+	//goConditionals()
+
+	// go loops
+	goLoops()
+
+}
+
+func goTypes() {
 	fmt.Println("hello world")
 	fmt.Println('A')
 
@@ -31,4 +44,31 @@ func main() {
 	name1, name2 = "harry", "ron"
 	fmt.Printf("%s, %s\n", name1, name2)
 
+}
+
+func goConditionals() {
+	/*
+	 * conditionals
+	 *
+	 * if, else if
+	 * &&, ||
+	 * ==, !=
+	 */
+	var str1 string = "harry"
+	var str2 string = "harry"
+
+	if str1 == str2 {
+		fmt.Println("Strings are equal")
+	} else if str1 != str2 {
+		fmt.Println("Strings are not really equal")
+	} else {
+		fmt.Println("Never hit this")
+	}
+
+}
+
+func goLoops() {
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 }
