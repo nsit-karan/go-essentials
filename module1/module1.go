@@ -14,7 +14,13 @@ func main() {
 	//goConditionals()
 
 	// go loops
-	goLoops()
+	//goLoops()
+
+	// functions
+	Add(2, 3)
+
+	isGreater, sum := AddMultiReturn(10, 20)
+	fmt.Printf("bool : %t, sum %d\n", isGreater, sum)
 
 }
 
@@ -68,7 +74,22 @@ func goConditionals() {
 }
 
 func goLoops() {
+
+	fmt.Println("Loop1 - 0 to 9")
 	for i := 0; i < 10; i++ {
 		fmt.Println(i)
+	}
+
+	fmt.Println("Loop2 - 0, 1, 2")
+	var j int = 0
+	for j < 10 {
+		fmt.Println(j)
+		j++
+
+		if j == 3 {
+			break
+		} else {
+			continue
+		}
 	}
 }
