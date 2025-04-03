@@ -23,7 +23,7 @@ func main() {
 	fmt.Printf("bool : %t, sum %d\n", isGreater, sum)
 
 	// Pointers
-	PointerBasics()
+	TestPointers()
 
 }
 
