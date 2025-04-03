@@ -17,10 +17,13 @@ func main() {
 	//goLoops()
 
 	// functions
-	Add(2, 3)
+	//Add(2, 3)
 
 	isGreater, sum := AddMultiReturn(10, 20)
 	fmt.Printf("bool : %t, sum %d\n", isGreater, sum)
+
+	// Pointers
+	TestPointers()
 
 }
 
