@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 	"reflect"
+
+	"github.com/module1/basics"
+	"github.com/module1/greetings"
 )
 
 func main() {
@@ -19,11 +22,14 @@ func main() {
 	// functions
 	//Add(2, 3)
 
-	isGreater, sum := AddMultiReturn(10, 20)
+	isGreater, sum := basics.AddMultiReturn(10, 20)
 	fmt.Printf("bool : %t, sum %d\n", isGreater, sum)
 
 	// Pointers
-	TestPointers()
+	basics.TestPointers()
+
+	// Import modules and call a function from that module
+	greetings.Greet()
 
 }
 
