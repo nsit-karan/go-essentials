@@ -8,4 +8,7 @@ go quick rampup
 
 
 # module1 build
-go build -o bin/module1 module1/*.go
+- Till the code was organized into folders but was not using go modules (go.mod), simpl 'go build' works - go build -o bin/module1 module1/*.go
+- now, with the code organized as go modules, the way to run the code is:
+  - navigate to module1
+  - go run main.go
