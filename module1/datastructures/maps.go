@@ -18,9 +18,12 @@ func basicMaps() {
 	map2 := map[int]string{}
 	fmt.Println(map2)
 
-	var arr []int = []int{}
-	arr1 := append(arr, 100)
-	fmt.Println(arr)
-	fmt.Println(arr1)
+	// initialize a map using map literal with key:value pairs
+	map3 := map[int]string{
+		1: "stone",
+		2: "gold",
+		3: "silver",
+	}
+	fmt.Println(map3)
 
 }
