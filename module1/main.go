@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	ds "github.com/module1/datastructures"
+	assignments "github.com/module1/assignments"
 )
 
 func main() {
@@ -31,9 +31,17 @@ func main() {
 	//gr.Greet()
 
 	// ds related functions
-	ds.ArraysOps()
-	ds.ProcessSlices()
-	ds.ProcessMaps()
+	//ds.ArraysOps()
+	//ds.ProcessSlices()
+	//ds.ProcessMaps()
+
+	// assignments
+	mapAs := assignments.CreateMap()
+	assignments.PrintMap(mapAs)
+
+	// delete the entries
+	assignments.DeleteMap(mapAs)
+	assignments.PrintMap(mapAs)
 }
 
 func goTypes() {
