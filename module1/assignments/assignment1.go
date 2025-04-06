@@ -21,3 +21,11 @@ func DeleteMap(mapArg map[string]int) {
 		delete(mapArg, key)
 	}
 }
+
+func PrintMap(mapArg map[string]int) {
+
+	fmt.Println("-----Printing the map contents by hand -------")
+	for key, value := range mapArg {
+		fmt.Printf("Key: %s, value: %d\n", key, value)
+	}
+}

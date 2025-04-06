@@ -37,7 +37,11 @@ func main() {
 
 	// assignments
 	mapAs := assignments.CreateMap()
+	assignments.PrintMap(mapAs)
+
+	// delete the entries
 	assignments.DeleteMap(mapAs)
+	assignments.PrintMap(mapAs)
 }
 
 func goTypes() {
