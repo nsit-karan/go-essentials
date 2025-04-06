@@ -2,11 +2,14 @@ package datastructures
 
 import (
 	"fmt"
+	"reflect"
 )
 
 func ArraysOps() {
 	ArrayInits()
-	ArrayIteration()
+	ArrayInitializations()
+
+	//ArrayIteration()
 }
 
 func ArrayInits() {
@@ -22,6 +25,7 @@ func ArrayInits() {
 
 	fmt.Println(literal)
 	fmt.Println(intBasic)
+
 }
 
 func ArrayIteration() {
@@ -38,4 +42,17 @@ func ArrayIteration() {
 		fmt.Printf("index%d:value%d \n", i, val)
 	}
 
+}
+
+func ArrayInitializations() {
+
+	fmt.Println("\n-----Array Initlization options on the table---------")
+	var arr [4]int = [4]int{}
+	fmt.Println(arr)
+
+	// you will notice that the type is [4] int
+	// ,i.e the size of the array is part of the type
+	// in other words arr [4] int will be of a diff type
+	// than arr [5] int
+	fmt.Println(reflect.TypeOf(arr))
 }
