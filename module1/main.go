@@ -33,6 +33,7 @@ func main() {
 	// ds related functions
 	ds.ArraysOps()
 	ds.ProcessSlices()
+	ds.ProcessMaps()
 }
 
 func goTypes() {
