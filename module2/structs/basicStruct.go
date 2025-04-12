@@ -54,6 +54,10 @@ func processNamedStructs() {
 	}
 
 	fmt.Println(personInstance)
+
+	// another way to initialize person
+	var personInstance1 person = person{"hagrid", 200}
+	fmt.Println(personInstance1)
 }
 
 func ProcessStructs() {
