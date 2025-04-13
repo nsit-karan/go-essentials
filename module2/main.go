@@ -7,4 +7,5 @@ import (
 func main() {
 	structs.ProcessStructs()
 	structs.ProcessMethods()
+	structs.ProcessEncapsulation()
 }
