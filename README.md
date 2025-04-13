@@ -33,5 +33,10 @@ Ways to initialize the map
   - navigate to module1
   - go run main.go
 
+# module2 notes
+## structs
+consider a ptr to a named struct 'person, i.e, 'var ptr *person = ....'. 
+go allowed to access the variables of person directly using '.' operator, i.e, ptr.name, ptr.age work fine. These are equivalent
+to (*ptr).name, (*ptr).age. This is the 'syntactic sugar' that go allows while accessing fields of a named struct when given a pointer to the named struct
 
 # Good references
